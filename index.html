@@ -1,45 +1,246 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lisa Apartment House Salerno - Sito Ufficiale</title>
-<style>
-body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f7f7f7; color:#333;}
-header {background:#0077b6; color:white; padding:20px; text-align:center; font-size:22px; font-weight:bold;}
-section {padding:20px; background:white; margin:15px; border-radius:8px;}
-h2 {color:#0077b6;}
-.btn {display:inline-block; padding:12px 18px; background:#0077b6; color:white; border-radius:6px; text-decoration:none; margin-top:10px;}
-.map {width:100%; height:250px; border-radius:10px; border:none;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisa Apartment House Salerno - Sito Ufficiale</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0077b6, #00a6d6);
+      color: white;
+      padding: 18px 16px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 14px;
+      padding: 18px 16px;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      color: #0077b6;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 4px;
+    }
+
+    ul {
+      margin-left: 18px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .map {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 8px;
+    }
+
+    /* box info rapida */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 8px;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+    .info-item {
+      background: #f5f7fb;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    /* “pillole” servizi */
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .tag {
+      font-size: 12px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: #e3f2fd;
+      color: #0077b6;
+    }
+
+    /* pulsante whatsapp fisso */
+    .whatsapp-btn {
+      position: fixed;
+      right: 14px;
+      bottom: 18px;
+      background: #25D366;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 20;
+    }
+    .whatsapp-btn span.icon {
+      background: rgba(0,0,0,0.15);
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* link stile pulsante dentro le sezioni */
+    .btn-link {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #0077b6;
+      color: #fff;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #777;
+      padding: 12px;
+    }
+
+    @media (max-width: 480px) {
+      header { font-size: 18px; }
+      .whatsapp-btn { font-size: 13px; padding: 10px 14px; }
+    }
+  </style>
 </head>
+
 <body>
-<header>Lisa Apartment House Salerno</header>
-<section>
-<h2>Benvenuti</h2>
-<p>Benvenuti nel sito ufficiale di <strong>Lisa Apartment House Salerno</strong>, situato in Via Gelso 14.</p>
-<p>Appartamento moderno, ideale per coppie, famiglie e viaggiatori.</p>
-</section>
-<section>
-<h2>Servizi</h2>
-<ul>
-<li>Wi-Fi gratuito</li>
-<li>Climatizzazione</li>
-<li>Cucina attrezzata</li>
-<li>Bagno privato</li>
-<li>Check-in flessibile</li>
-</ul>
-</section>
-<section>
-<h2>Posizione</h2>
-<p>Via Gelso 14, 84126 Salerno</p>
-<iframe class="map" src="https://maps.google.com/maps?q=Via%20Gelso%2014%2C%20Salerno&z=16&output=embed"></iframe>
-</section>
-<section>
-<h2>Contatti</h2>
-<p><strong>Marco Caggiano</strong></p>
-<p>Telefono / WhatsApp: <a href="https://wa.me/393276376839">+39 327 637 6839</a></p>
-<p>Email: marcocaggiano8@gmail.com</p>
-</section>
+
+<header>Lisa Apartment House Salerno – Sito ufficiale</header>
+
+<main>
+
+  <section>
+    <h2>Benvenuti</h2>
+    <p>
+      Benvenuti nel sito ufficiale di <strong>Lisa Apartment House Salerno</strong>,
+      situato in <strong>Via Gelso 14</strong>, nel quartiere Carmine di Salerno.
+    </p>
+    <p>
+      Appartamento moderno e accogliente, ideale per coppie, famiglie e viaggiatori
+      che vogliono visitare <strong>Salerno</strong>, la <strong>Costiera Amalfitana</strong> e il
+      <strong>Cilento</strong>.
+    </p>
+
+    <div class="info-grid">
+      <div class="info-item"><strong>Zona:</strong><br>Quartiere Carmine, Salerno</div>
+      <div class="info-item"><strong>Tipologia:</strong><br>Appartamento intero</div>
+      <div class="info-item"><strong>Ospiti:</strong><br>Fino a 4 persone</div>
+    </div>
+
+    <div class="tag-list">
+      <span class="tag">Check-in flessibile</span>
+      <span class="tag">Ideale per famiglie</span>
+      <span class="tag">Vicino al centro</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Servizi principali</h2>
+    <ul>
+      <li>Wi-Fi gratuito</li>
+      <li>Climatizzazione caldo/freddo</li>
+      <li>Cucina completamente attrezzata</li>
+      <li>Bagno privato con doccia</li>
+      <li>Biancheria e asciugamani inclusi</li>
+      <li>Smart TV</li>
+      <li>Check-in flessibile (su accordo)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Posizione</h2>
+    <p>Indirizzo: <strong>Via Gelso 14, 84126 Salerno (SA)</strong></p>
+    <p>Quartiere tranquillo e comodo per raggiungere il centro, il lungomare, la stazione e i collegamenti per Costiera Amalfitana e Cilento.</p>
+    <iframe class="map" src="https://maps.google.com/maps?q=Via%20Gelso%2014%2C%20Salerno&z=16&output=embed"></iframe>
+  </section>
+
+  <section>
+    <h2>Prenotazioni</h2>
+    <p>
+      Puoi richiedere disponibilità e prezzi direttamente a Marco, senza commissioni,
+      oppure prenotare tramite le piattaforme:
+    </p>
+    <ul>
+      <li>Richieste dirette via WhatsApp o telefono</li>
+      <li>Possibilità di prenotare tramite portali online (Booking / Airbnb ecc.)</li>
+    </ul>
+    <!-- Se vuoi, sostituisci i link generici qui sotto con quelli reali dei tuoi annunci -->
+    <a class="btn-link" href="https://www.booking.com" target="_blank" rel="noopener">Apri pagina Booking</a>
+    <a class="btn-link" href="https://www.airbnb.it" target="_blank" rel="noopener" style="background:#ff385c;">Apri pagina Airbnb</a>
+  </section>
+
+  <section>
+    <h2>Contatti</h2>
+    <p><strong>Gestione privata:</strong> Marco Caggiano</p>
+    <p>Telefono / WhatsApp: <a href="https://wa.me/393276376839">+39 327 637 6839</a></p>
+    <p>Email: <a href="mailto:marcocaggiano8@gmail.com">marcocaggiano8@gmail.com</a></p>
+    <p style="margin-top:6px;font-size:13px;">
+      Scrivimi su WhatsApp indicando <strong>date</strong>, <strong>numero di persone</strong>
+      ed eventuali esigenze (bambini, orari di arrivo, ecc.): ti rispondo con
+      disponibilità e prezzo totale.
+    </p>
+  </section>
+
+</main>
+
+<a class="whatsapp-btn"
+   href="https://wa.me/393276376839?text=Ciao%20Marco,%20vorrei%20informazioni%20su%20Lisa%20Apartment%20House%20Salerno"
+   target="_blank" rel="noopener">
+  <span class="icon">💬</span>
+  <span>Scrivi su WhatsApp</span>
+</a>
+
+<footer>
+  © Lisa Apartment House Salerno – Via Gelso 14, Salerno – Gestito da Marco Caggiano
+</footer>
+
 </body>
 </html>
